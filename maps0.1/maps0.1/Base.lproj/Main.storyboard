@@ -1,113 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mTy-vJ-oWC">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Kc-DU-ZbP">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Front View Controller-->
-        <scene sceneID="7jj-D9-j3x">
+        <!--Sensor-->
+        <scene sceneID="BsB-nx-61f">
             <objects>
-                <viewController id="mTy-vJ-oWC" customClass="FrontViewController" customModule="maps0_1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="McF-GD-rtr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                <viewController id="dK4-SO-MrE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TZv-v4-Bcp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="POo-vD-zfk"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sensor" image="circle" catalog="system" id="LCz-Kj-W1b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TK4-4V-g9i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="190" y="2325"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="doo-uA-8R6">
+            <objects>
+                <viewController id="CC5-Po-sMA" customClass="ViewController" customModule="maps0_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ghy-eb-gl2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MhF-a9-ktZ">
-                                <rect key="frame" x="0.0" y="11" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Smart Helmet" id="MTB-kU-PhN">
-                                        <barButtonItem key="rightBarButtonItem" title="Maps" id="uOc-AA-0rl">
-                                            <connections>
-                                                <segue destination="BYZ-38-t0r" kind="popoverPresentation" popoverAnchorBarButtonItem="uOc-AA-0rl" id="sfI-0q-hX1">
-                                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                                </segue>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkc-Qw-kpa">
-                                <rect key="frame" x="20" y="93" width="88" height="30"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SPw-wi-yJl">
+                                <rect key="frame" x="0.0" y="44" width="375" height="704"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pick Contact"/>
-                                <connections>
-                                    <action selector="showContact:" destination="mTy-vJ-oWC" eventType="touchUpInside" id="sAQ-9c-bg0"/>
-                                </connections>
-                            </button>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ZZT-Rq-SWX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="J4u-Yj-n6z"/>
+                    <connections>
+                        <outlet property="mapView" destination="SPw-wi-yJl" id="0fz-ko-oyk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5vb-Vb-5zI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="1615"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="X2S-jx-L19">
+            <objects>
+                <viewController id="plG-Tk-8KF" customClass="FrontViewController" customModule="maps0_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ExQ-Gt-kSP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eL-sv-tib">
-                                <rect key="frame" x="20" y="412" width="374" height="21"/>
+                                <rect key="frame" x="16" y="417" width="374" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCt-5m-6Yi">
-                                <rect key="frame" x="192" y="441" width="30" height="30"/>
+                                <rect key="frame" x="239" y="417" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Call"/>
                                 <connections>
-                                    <action selector="callNumber:" destination="mTy-vJ-oWC" eventType="touchUpInside" id="P0V-9v-f4S"/>
+                                    <action selector="callNumber:" destination="plG-Tk-8KF" eventType="touchUpInside" id="TCh-Cb-k0U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkc-Qw-kpa">
+                                <rect key="frame" x="16" y="199" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pick Contact"/>
+                                <connections>
+                                    <action selector="pickContact:" destination="plG-Tk-8KF" eventType="touchUpInside" id="TlA-HO-a4e"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="OK5-oA-Bbo"/>
+                        <viewLayoutGuide key="safeArea" id="dcO-uv-RB1"/>
                     </view>
-                    <navigationItem key="navigationItem" id="RX4-fg-dhI"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="sLt-ij-hgK"/>
                     <connections>
-                        <outlet property="lblNumber" destination="1eL-sv-tib" id="DD3-wy-zl7"/>
+                        <outlet property="lblNumber" destination="1eL-sv-tib" id="LXg-TR-iDd"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="04f-Oc-ugg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v7e-Ph-TfT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-736.23188405797111" y="137.94642857142856"/>
+            <point key="canvasLocation" x="191" y="961"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="bze-MP-yfv">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="maps0_1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SPw-wi-yJl">
-                                <rect key="frame" x="0.0" y="10" width="414" height="788"/>
-                            </mapView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PHg-Rz-CSF">
-                                <rect key="frame" x="0.0" y="10" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Smart Helmet" id="37D-o8-pvl">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="cAq-n0-Vtm">
-                                            <connections>
-                                                <segue destination="mTy-vJ-oWC" kind="show" id="kyv-JX-XwU"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="SPw-wi-yJl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Lxc-h3-kRd"/>
-                            <constraint firstItem="SPw-wi-yJl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QFq-hi-HOP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SPw-wi-yJl" secondAttribute="trailing" id="SqM-yK-nDr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SPw-wi-yJl" secondAttribute="bottom" constant="10" id="dDd-Xv-HmK"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="D9N-p8-pLB"/>
+                <tabBarController id="4Kc-DU-ZbP" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9MB-W8-tRg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
                     <connections>
-                        <outlet property="mapView" destination="SPw-wi-yJl" id="7SQ-1f-4gW"/>
+                        <segue destination="plG-Tk-8KF" kind="relationship" relationship="viewControllers" id="xbi-kU-jhV"/>
+                        <segue destination="CC5-Po-sMA" kind="relationship" relationship="viewControllers" id="8yT-CR-gof"/>
+                        <segue destination="dK4-SO-MrE" kind="relationship" relationship="viewControllers" id="toh-T4-Hi4"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IrE-wj-BNT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925" y="138"/>
+            <point key="canvasLocation" x="-762" y="1287"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="circle" catalog="system" width="64" height="60"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="map" catalog="system" width="64" height="56"/>
+    </resources>
 </document>

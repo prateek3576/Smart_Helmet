@@ -23,6 +23,71 @@
             </objects>
             <point key="canvasLocation" x="190" y="2325"/>
         </scene>
+        <!--Emergency Contacts-->
+        <scene sceneID="Cps-6i-UXD">
+            <objects>
+                <tableViewController id="N1o-pT-eJ0" customClass="ContactViewController" customModule="maps0_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7qJ-AU-Jed">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactCell" textLabel="QlY-Q7-NrQ" detailTextLabel="lUD-JT-4TZ" imageView="lLB-y7-SIZ" style="IBUITableViewCellStyleSubtitle" id="Z4I-Ta-nay" customClass="emgContactCell" customModule="maps0_1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="55.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z4I-Ta-nay" id="Kdw-Zs-gSg">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="55.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QlY-Q7-NrQ">
+                                            <rect key="frame" x="86.666666666666686" y="8.9999999999999982" width="33.333333333333336" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lUD-JT-4TZ">
+                                            <rect key="frame" x="86.666666666666686" y="31.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="test.png" id="lLB-y7-SIZ">
+                                            <rect key="frame" x="16" y="0.0" width="55.666666666666686" height="55.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="N1o-pT-eJ0" id="LVj-lc-5he"/>
+                            <outlet property="delegate" destination="N1o-pT-eJ0" id="2RZ-JK-4zZ"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Emergency Contacts" id="BcD-7N-AbH">
+                        <barButtonItem key="rightBarButtonItem" title="add" image="plus" catalog="system" id="3Aw-n3-oFv">
+                            <connections>
+                                <action selector="addButtonPushed:" destination="N1o-pT-eJ0" id="lwt-PH-Zjb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="7qJ-AU-Jed" id="Fv6-Pv-Rq4"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bj0-Ay-N8f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1103.2" y="3137.4384236453202"/>
+        </scene>
         <!--Map-->
         <scene sceneID="doo-uA-8R6">
             <objects>
@@ -105,16 +170,39 @@
                         <segue destination="plG-Tk-8KF" kind="relationship" relationship="viewControllers" id="xbi-kU-jhV"/>
                         <segue destination="CC5-Po-sMA" kind="relationship" relationship="viewControllers" id="8yT-CR-gof"/>
                         <segue destination="dK4-SO-MrE" kind="relationship" relationship="viewControllers" id="toh-T4-Hi4"/>
+                        <segue destination="g1l-Tq-ILB" kind="relationship" relationship="viewControllers" id="rhf-Ne-ccz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IrE-wj-BNT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-762" y="1287"/>
         </scene>
+        <!--Contacts-->
+        <scene sceneID="tZ6-Ea-mBv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g1l-Tq-ILB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contacts" image="list.bullet" catalog="system" id="Wbo-C9-SFn"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J59-bY-FD2">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="N1o-pT-eJ0" kind="relationship" relationship="rootViewController" id="gEQ-Fk-Srp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7y-1m-mmx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160.80000000000001" y="3137.4384236453202"/>
+        </scene>
     </scenes>
     <resources>
         <image name="circle" catalog="system" width="64" height="60"/>
         <image name="house" catalog="system" width="64" height="54"/>
+        <image name="list.bullet" catalog="system" width="64" height="44"/>
         <image name="map" catalog="system" width="64" height="56"/>
+        <image name="plus" catalog="system" width="64" height="56"/>
+        <image name="test.png" width="200" height="200"/>
     </resources>
 </document>

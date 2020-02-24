@@ -11,11 +11,15 @@ import ContactsUI
 
 class FrontViewController: UIViewController,CNContactPickerDelegate {
 
-    @IBAction func showContact(_ sender: Any) {
+    var chosenNum = String()
+    
+    @IBAction func pickContact(_ sender: Any) {
         let contacVC = CNContactPickerViewController()
         contacVC.delegate = self
         self.present(contacVC, animated: true, completion: nil)
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,7 +27,9 @@ class FrontViewController: UIViewController,CNContactPickerDelegate {
     }
     
     @IBAction func callNumber(_ sender: Any) {
-        UIApplication.shared.openURL(NSURL(string: "tel://4125197002")! as URL)
+        if let url = URL(string: "tel://\(chosenNum)") {
+            UIApplication.shared.canOpenURL(url)
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)}
     }
     @IBOutlet weak var lblNumber: UILabel!
     // MARK: Delegate method CNContectPickerDelegate
@@ -33,6 +39,8 @@ class FrontViewController: UIViewController,CNContactPickerDelegate {
            print((numbers?.value)?.stringValue ?? "")
            
            self.lblNumber.text = " Contact No. \((numbers?.value)?.stringValue ?? "")"
+            chosenNum = (numbers?.value.stringValue)!
+            print(chosenNum)
              
        }
 

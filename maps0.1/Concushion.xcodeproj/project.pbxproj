@@ -13,16 +13,17 @@
 		6E22C11E23CD5E1C006D5623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E22C11C23CD5E1C006D5623 /* Main.storyboard */; };
 		6E22C12023CD5E1F006D5623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E22C11F23CD5E1F006D5623 /* Assets.xcassets */; };
 		6E22C12323CD5E1F006D5623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E22C12123CD5E1F006D5623 /* LaunchScreen.storyboard */; };
-		6E22C12B23CD64DE006D5623 /* FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E22C12A23CD64DE006D5623 /* FrontViewController.swift */; };
+		6E80994D2404EDD70000B0F7 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = B7489E8923EB35C100BF332E /* test.png */; };
+		6E8099502404F0570000B0F7 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E80994F2404F0570000B0F7 /* home.png */; };
+		6E8099522404F2990000B0F7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8099512404F2990000B0F7 /* HomeViewController.swift */; };
 		B7489E8423EA356C00BF332E /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7489E8323EA356C00BF332E /* ContactViewController.swift */; };
 		B7489E8623EA64AB00BF332E /* emgContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7489E8523EA64AB00BF332E /* emgContactCell.swift */; };
 		B7489E8823EB342E00BF332E /* ContactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7489E8723EB342E00BF332E /* ContactData.swift */; };
-		B7489E8A23EB35C100BF332E /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = B7489E8923EB35C100BF332E /* test.png */; };
 		B7DB7DA623EBBDBA00CE19CE /* icons8-happy-96.png in Resources */ = {isa = PBXBuildFile; fileRef = B7DB7DA523EBBDBA00CE19CE /* icons8-happy-96.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E22C11323CD5E1C006D5623 /* maps0.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maps0.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E22C11323CD5E1C006D5623 /* Concushion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concushion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E22C11623CD5E1C006D5623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E22C11823CD5E1C006D5623 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6E22C11A23CD5E1C006D5623 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,7 +31,8 @@
 		6E22C11F23CD5E1F006D5623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E22C12223CD5E1F006D5623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E22C12423CD5E1F006D5623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E22C12A23CD64DE006D5623 /* FrontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
+		6E80994F2404F0570000B0F7 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		6E8099512404F2990000B0F7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B7489E8323EA356C00BF332E /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		B7489E8523EA64AB00BF332E /* emgContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emgContactCell.swift; sourceTree = "<group>"; };
 		B7489E8723EB342E00BF332E /* ContactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactData.swift; sourceTree = "<group>"; };
@@ -60,7 +62,7 @@
 		6E22C11423CD5E1C006D5623 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E22C11323CD5E1C006D5623 /* maps0.1.app */,
+				6E22C11323CD5E1C006D5623 /* Concushion.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,13 +70,14 @@
 		6E22C11523CD5E1C006D5623 /* maps0.1 */ = {
 			isa = PBXGroup;
 			children = (
+				6E80994F2404F0570000B0F7 /* home.png */,
 				B7489E8923EB35C100BF332E /* test.png */,
 				B7DB7DA523EBBDBA00CE19CE /* icons8-happy-96.png */,
 				6E22C11623CD5E1C006D5623 /* AppDelegate.swift */,
 				6E22C11823CD5E1C006D5623 /* SceneDelegate.swift */,
 				6E22C11A23CD5E1C006D5623 /* ViewController.swift */,
-				6E22C12A23CD64DE006D5623 /* FrontViewController.swift */,
 				6E22C11C23CD5E1C006D5623 /* Main.storyboard */,
+				6E8099512404F2990000B0F7 /* HomeViewController.swift */,
 				B7489E8323EA356C00BF332E /* ContactViewController.swift */,
 				B7489E8523EA64AB00BF332E /* emgContactCell.swift */,
 				B7489E8723EB342E00BF332E /* ContactData.swift */,
@@ -88,9 +91,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E22C11223CD5E1C006D5623 /* maps0.1 */ = {
+		6E22C11223CD5E1C006D5623 /* Concushion */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E22C12723CD5E1F006D5623 /* Build configuration list for PBXNativeTarget "maps0.1" */;
+			buildConfigurationList = 6E22C12723CD5E1F006D5623 /* Build configuration list for PBXNativeTarget "Concushion" */;
 			buildPhases = (
 				6E22C10F23CD5E1C006D5623 /* Sources */,
 				6E22C11023CD5E1C006D5623 /* Frameworks */,
@@ -100,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = maps0.1;
+			name = Concushion;
 			productName = maps0.1;
-			productReference = 6E22C11323CD5E1C006D5623 /* maps0.1.app */;
+			productReference = 6E22C11323CD5E1C006D5623 /* Concushion.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -120,7 +123,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6E22C10E23CD5E1C006D5623 /* Build configuration list for PBXProject "maps0.1" */;
+			buildConfigurationList = 6E22C10E23CD5E1C006D5623 /* Build configuration list for PBXProject "Concushion" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -133,7 +136,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E22C11223CD5E1C006D5623 /* maps0.1 */,
+				6E22C11223CD5E1C006D5623 /* Concushion */,
 			);
 		};
 /* End PBXProject section */
@@ -143,8 +146,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7489E8A23EB35C100BF332E /* test.png in Resources */,
+				6E80994D2404EDD70000B0F7 /* test.png in Resources */,
 				6E22C12323CD5E1F006D5623 /* LaunchScreen.storyboard in Resources */,
+				6E8099502404F0570000B0F7 /* home.png in Resources */,
 				6E22C12023CD5E1F006D5623 /* Assets.xcassets in Resources */,
 				6E22C11E23CD5E1C006D5623 /* Main.storyboard in Resources */,
 				B7DB7DA623EBBDBA00CE19CE /* icons8-happy-96.png in Resources */,
@@ -158,12 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E22C12B23CD64DE006D5623 /* FrontViewController.swift in Sources */,
 				6E22C11B23CD5E1C006D5623 /* ViewController.swift in Sources */,
 				6E22C11723CD5E1C006D5623 /* AppDelegate.swift in Sources */,
 				B7489E8823EB342E00BF332E /* ContactData.swift in Sources */,
 				6E22C11923CD5E1C006D5623 /* SceneDelegate.swift in Sources */,
 				B7489E8623EA64AB00BF332E /* emgContactCell.swift in Sources */,
+				6E8099522404F2990000B0F7 /* HomeViewController.swift in Sources */,
 				B7489E8423EA356C00BF332E /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,14 +313,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9QPPK5NZYX;
+				DEVELOPMENT_TEAM = FHLZ4X6Z26;
 				INFOPLIST_FILE = maps0.1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cjfoglio.maps0-1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prateek.maps0-1";
+				PRODUCT_NAME = Concushion;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -327,14 +331,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9QPPK5NZYX;
+				DEVELOPMENT_TEAM = FHLZ4X6Z26;
 				INFOPLIST_FILE = maps0.1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cjfoglio.maps0-1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.prateek.maps0-1";
+				PRODUCT_NAME = Concushion;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -343,7 +347,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6E22C10E23CD5E1C006D5623 /* Build configuration list for PBXProject "maps0.1" */ = {
+		6E22C10E23CD5E1C006D5623 /* Build configuration list for PBXProject "Concushion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E22C12523CD5E1F006D5623 /* Debug */,
@@ -352,7 +356,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E22C12723CD5E1F006D5623 /* Build configuration list for PBXNativeTarget "maps0.1" */ = {
+		6E22C12723CD5E1F006D5623 /* Build configuration list for PBXNativeTarget "Concushion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E22C12823CD5E1F006D5623 /* Debug */,

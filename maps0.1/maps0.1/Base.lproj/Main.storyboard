@@ -26,13 +26,13 @@
         <!--Emergency Contacts-->
         <scene sceneID="Cps-6i-UXD">
             <objects>
-                <tableViewController id="N1o-pT-eJ0" customClass="ContactViewController" customModule="maps0_1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="N1o-pT-eJ0" customClass="ContactViewController" customModule="Concushion" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7qJ-AU-Jed">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactCell" textLabel="QlY-Q7-NrQ" detailTextLabel="lUD-JT-4TZ" imageView="lLB-y7-SIZ" style="IBUITableViewCellStyleSubtitle" id="Z4I-Ta-nay" customClass="emgContactCell" customModule="maps0_1" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactCell" textLabel="QlY-Q7-NrQ" detailTextLabel="lUD-JT-4TZ" imageView="lLB-y7-SIZ" style="IBUITableViewCellStyleSubtitle" id="Z4I-Ta-nay" customClass="emgContactCell" customModule="Concushion" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="55.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z4I-Ta-nay" id="Kdw-Zs-gSg">
@@ -91,17 +91,22 @@
         <!--Map-->
         <scene sceneID="doo-uA-8R6">
             <objects>
-                <viewController id="CC5-Po-sMA" customClass="ViewController" customModule="maps0_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CC5-Po-sMA" customClass="ViewController" customModule="Concushion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ghy-eb-gl2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SPw-wi-yJl">
-                                <rect key="frame" x="0.0" y="44" width="375" height="704"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SPw-wi-yJl">
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SPw-wi-yJl" firstAttribute="leading" secondItem="ZZT-Rq-SWX" secondAttribute="leading" id="KIi-ni-gtg"/>
+                            <constraint firstItem="SPw-wi-yJl" firstAttribute="top" secondItem="ZZT-Rq-SWX" secondAttribute="top" id="bF0-RD-YvV"/>
+                            <constraint firstItem="SPw-wi-yJl" firstAttribute="trailing" secondItem="ZZT-Rq-SWX" secondAttribute="trailing" id="eB9-c9-13a"/>
+                            <constraint firstAttribute="bottom" secondItem="SPw-wi-yJl" secondAttribute="bottom" id="irP-9x-rUL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZZT-Rq-SWX"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="J4u-Yj-n6z"/>
@@ -116,46 +121,44 @@
         <!--Home-->
         <scene sceneID="X2S-jx-L19">
             <objects>
-                <viewController id="plG-Tk-8KF" customClass="FrontViewController" customModule="maps0_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="plG-Tk-8KF" customClass="HomeViewController" customModule="Concushion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ExQ-Gt-kSP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eL-sv-tib">
-                                <rect key="frame" x="16" y="417" width="374" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Trip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tls-ur-dbF">
+                                <rect key="frame" x="0.0" y="354" width="375" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCt-5m-6Yi">
-                                <rect key="frame" x="239" y="417" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Call"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0mm-JF-0nk">
+                                <rect key="frame" x="163" y="393" width="51" height="31"/>
                                 <connections>
-                                    <action selector="callNumber:" destination="plG-Tk-8KF" eventType="touchUpInside" id="TCh-Cb-k0U"/>
+                                    <action selector="stateSwitch:" destination="plG-Tk-8KF" eventType="valueChanged" id="Os1-rB-Y2j"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkc-Qw-kpa">
-                                <rect key="frame" x="16" y="199" width="88" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pick Contact"/>
-                                <connections>
-                                    <action selector="pickContact:" destination="plG-Tk-8KF" eventType="touchUpInside" id="TlA-HO-a4e"/>
-                                </connections>
-                            </button>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Tls-ur-dbF" firstAttribute="leading" secondItem="dcO-uv-RB1" secondAttribute="leading" id="3Ec-hp-YCI"/>
+                            <constraint firstItem="dcO-uv-RB1" firstAttribute="bottom" secondItem="0mm-JF-0nk" secondAttribute="bottom" constant="305" id="RqF-RB-o28"/>
+                            <constraint firstItem="Tls-ur-dbF" firstAttribute="trailing" secondItem="dcO-uv-RB1" secondAttribute="trailing" id="Vn9-u4-1gl"/>
+                            <constraint firstItem="dcO-uv-RB1" firstAttribute="trailing" secondItem="0mm-JF-0nk" secondAttribute="trailing" constant="163" id="YYt-kb-Cdt"/>
+                            <constraint firstItem="0mm-JF-0nk" firstAttribute="leading" secondItem="dcO-uv-RB1" secondAttribute="leading" constant="163" id="gsW-47-k52"/>
+                            <constraint firstItem="Tls-ur-dbF" firstAttribute="top" secondItem="dcO-uv-RB1" secondAttribute="top" constant="310" id="vou-jv-ZaZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dcO-uv-RB1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="sLt-ij-hgK"/>
                     <connections>
-                        <outlet property="lblNumber" destination="1eL-sv-tib" id="LXg-TR-iDd"/>
+                        <outlet property="stateSwitch" destination="0mm-JF-0nk" id="n5M-dc-PD1"/>
+                        <outlet property="textLabel" destination="Tls-ur-dbF" id="LBv-Fv-49u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v7e-Ph-TfT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="191" y="961"/>
+            <point key="canvasLocation" x="189.59999999999999" y="960.59113300492618"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bze-MP-yfv">

@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         setUpMapView()
     }
     
+    
     func setUpMapView() {
             mapView.showsUserLocation = true
             mapView.showsCompass = true
@@ -44,6 +45,7 @@ class ViewController: UIViewController {
             locationManager.startUpdatingLocation()
          }
     }
+
     //MARK: - CLLocationManagerDelegate Methods
     extension ViewController: CLLocationManagerDelegate {
          func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -51,12 +53,65 @@ class ViewController: UIViewController {
             let currentLocation = location.coordinate
             let coordinateRegion = MKCoordinateRegion(center: currentLocation, latitudinalMeters: 800, longitudinalMeters: 800)
             mapView.setRegion(coordinateRegion, animated: true)
+            let geoCoder = CLGeocoder()
+            geoCoder.reverseGeocodeLocation(location, completionHandler:
+                {
+                    placemarks, error -> Void in
+
+                    // Place details
+                    guard let placeMark = placemarks?.first else { return }
+                    var address = "Address: "
+                    // Location name
+                    if let locationName = placeMark.name {
+                        //print("Location Name: \(locationName)")
+                        address = address + locationName + "\n"
+                    }
+                    
+                    /*if let substreet = placeMark.subThoroughfare {
+                        print("Street:\(substreet)")
+                        address = address + substreet
+                    }
+                    // Street address
+                    if let street = placeMark.thoroughfare {
+                        print("Street:\(street)")
+                        address = address + street
+                    }*/
+                    
+                    // City
+                    if let subcity = placeMark.subLocality {
+                        //print("City: \(subcity)")
+                        address = address + subcity + "\n"
+                    }
+                    
+                    // City
+                    if let city = placeMark.locality {
+                       // print("City: "+city)
+                        address = address + city + "\n"
+                    }
+                    
+                    
+                    
+                    // Zip code
+                    if let zip = placeMark.postalCode {
+                        //print("Zip"+zip)
+                        address = address + zip + "\n"
+                    }
+                    // Country
+                    if let country = placeMark.country {
+                        //print("Country"+country)
+                        address = address + country + "\n"
+                    }
+                    
+                    print(address)
+                    
+            })
             locationManager.stopUpdatingLocation()
          }
          
          func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
             print(error.localizedDescription)
          }
+        
 
 
 }

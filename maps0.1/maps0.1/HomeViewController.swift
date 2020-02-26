@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     @IBAction func stateSwitch(_ sender: Any) {
         if stateSwitch.isOn {
             textLabel.text = "End Trip"
+            addressLabel.text = address
         } else {
             textLabel.text = "Start Trip"
         }
@@ -22,7 +23,8 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var textLabel: UILabel!
     
-
+    @IBOutlet weak var addressLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

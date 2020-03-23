@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		6E22C11723CD5E1C006D5623 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E22C11623CD5E1C006D5623 /* AppDelegate.swift */; };
 		6E22C11923CD5E1C006D5623 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E22C11823CD5E1C006D5623 /* SceneDelegate.swift */; };
-		6E22C11B23CD5E1C006D5623 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E22C11A23CD5E1C006D5623 /* ViewController.swift */; };
 		6E22C11E23CD5E1C006D5623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E22C11C23CD5E1C006D5623 /* Main.storyboard */; };
 		6E22C12023CD5E1F006D5623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E22C11F23CD5E1F006D5623 /* Assets.xcassets */; };
 		6E22C12323CD5E1F006D5623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E22C12123CD5E1F006D5623 /* LaunchScreen.storyboard */; };
+		6E3D4811240F214A00659DF5 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D4810240F214A00659DF5 /* BluetoothViewController.swift */; };
+		6E3D4814240F34D900659DF5 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3D4813240F34D900659DF5 /* CoreBluetooth.framework */; };
+		6E3D4816240F60EB00659DF5 /* ScanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3D4815240F60EB00659DF5 /* ScanTableViewController.swift */; };
+		6E7B4D7A24108BF500C328FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7B4D7924108BF400C328FC /* ViewController.swift */; };
 		6E80994D2404EDD70000B0F7 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = B7489E8923EB35C100BF332E /* test.png */; };
 		6E8099502404F0570000B0F7 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E80994F2404F0570000B0F7 /* home.png */; };
 		6E8099522404F2990000B0F7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8099512404F2990000B0F7 /* HomeViewController.swift */; };
+		6EC9FB4E241028F900BB97C9 /* WebpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC9FB4D241028F900BB97C9 /* WebpageViewController.swift */; };
 		B7489E8423EA356C00BF332E /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7489E8323EA356C00BF332E /* ContactViewController.swift */; };
 		B7489E8623EA64AB00BF332E /* emgContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7489E8523EA64AB00BF332E /* emgContactCell.swift */; };
 		B7489E8823EB342E00BF332E /* ContactData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7489E8723EB342E00BF332E /* ContactData.swift */; };
@@ -26,13 +30,17 @@
 		6E22C11323CD5E1C006D5623 /* Concushion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concushion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E22C11623CD5E1C006D5623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E22C11823CD5E1C006D5623 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6E22C11A23CD5E1C006D5623 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6E22C11D23CD5E1C006D5623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E22C11F23CD5E1F006D5623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E22C12223CD5E1F006D5623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E22C12423CD5E1F006D5623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E3D4810240F214A00659DF5 /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
+		6E3D4813240F34D900659DF5 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		6E3D4815240F60EB00659DF5 /* ScanTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanTableViewController.swift; sourceTree = "<group>"; };
+		6E7B4D7924108BF400C328FC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6E80994F2404F0570000B0F7 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		6E8099512404F2990000B0F7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6EC9FB4D241028F900BB97C9 /* WebpageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebpageViewController.swift; sourceTree = "<group>"; };
 		B7489E8323EA356C00BF332E /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		B7489E8523EA64AB00BF332E /* emgContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emgContactCell.swift; sourceTree = "<group>"; };
 		B7489E8723EB342E00BF332E /* ContactData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactData.swift; sourceTree = "<group>"; };
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3D4814240F34D900659DF5 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +65,7 @@
 			children = (
 				6E22C11523CD5E1C006D5623 /* maps0.1 */,
 				6E22C11423CD5E1C006D5623 /* Products */,
+				6E3D4812240F34D900659DF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,8 +85,11 @@
 				B7DB7DA523EBBDBA00CE19CE /* icons8-happy-96.png */,
 				6E22C11623CD5E1C006D5623 /* AppDelegate.swift */,
 				6E22C11823CD5E1C006D5623 /* SceneDelegate.swift */,
-				6E22C11A23CD5E1C006D5623 /* ViewController.swift */,
+				6E7B4D7924108BF400C328FC /* ViewController.swift */,
 				6E22C11C23CD5E1C006D5623 /* Main.storyboard */,
+				6EC9FB4D241028F900BB97C9 /* WebpageViewController.swift */,
+				6E3D4810240F214A00659DF5 /* BluetoothViewController.swift */,
+				6E3D4815240F60EB00659DF5 /* ScanTableViewController.swift */,
 				6E8099512404F2990000B0F7 /* HomeViewController.swift */,
 				B7489E8323EA356C00BF332E /* ContactViewController.swift */,
 				B7489E8523EA64AB00BF332E /* emgContactCell.swift */,
@@ -86,6 +99,14 @@
 				6E22C12423CD5E1F006D5623 /* Info.plist */,
 			);
 			path = maps0.1;
+			sourceTree = "<group>";
+		};
+		6E3D4812240F34D900659DF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E3D4813240F34D900659DF5 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,13 +183,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E22C11B23CD5E1C006D5623 /* ViewController.swift in Sources */,
 				6E22C11723CD5E1C006D5623 /* AppDelegate.swift in Sources */,
 				B7489E8823EB342E00BF332E /* ContactData.swift in Sources */,
 				6E22C11923CD5E1C006D5623 /* SceneDelegate.swift in Sources */,
+				6E7B4D7A24108BF500C328FC /* ViewController.swift in Sources */,
 				B7489E8623EA64AB00BF332E /* emgContactCell.swift in Sources */,
+				6E3D4811240F214A00659DF5 /* BluetoothViewController.swift in Sources */,
 				6E8099522404F2990000B0F7 /* HomeViewController.swift in Sources */,
 				B7489E8423EA356C00BF332E /* ContactViewController.swift in Sources */,
+				6EC9FB4E241028F900BB97C9 /* WebpageViewController.swift in Sources */,
+				6E3D4816240F60EB00659DF5 /* ScanTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

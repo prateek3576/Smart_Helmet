@@ -89,7 +89,7 @@ class ContactViewController: UIViewController, UITableViewDelegate, UITableViewD
     func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
         print(contact.phoneNumbers)
         addCell(contact)
-          
+        
     }
     
     // adds new cell
@@ -108,8 +108,8 @@ class ContactViewController: UIViewController, UITableViewDelegate, UITableViewD
     // Calls number
     func callContact(_ number: String){
         if let url = URL(string: "tel://\(number)") {
-        UIApplication.shared.canOpenURL(url)
-        UIApplication.shared.open(url, options: [:], completionHandler: nil)}
+            UIApplication.shared.canOpenURL(url)
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)}
     }
     
     // When emergency contact is selcted from list in order to initiate call

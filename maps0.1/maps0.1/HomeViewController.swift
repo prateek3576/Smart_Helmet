@@ -7,8 +7,21 @@
 //
 
 import UIKit
+import CoreBluetooth
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, CBCentralManagerDelegate {
+    
+    private var centralManager : CBCentralManager!
+    
+    func centralManagerDidUpdateState(_ central: CBCentralManager) {
+        if central.state == .poweredOn {
+            print("Bluetooth is On")
+            // centralManager.scanForPeripherals(withServices: nil, options: nil)
+        } else {
+            print("Bluetooth is not active")
+        }
+        
+    }
     
     @IBAction func stateSwitch(_ sender: Any) {
         if stateSwitch.isOn {
@@ -27,28 +40,28 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
-         /*stateSwitch.addTarget(self, action: #selector(stateChanged), for: .valueChanged)*/
+        
+        centralManager = CBCentralManager(delegate: self, queue: nil, options: nil)
     }
     
-    
-    
-    /*@objc func stateChanged(switchState: UISwitch) {
-        if switchState.isOn {
-            textLabel.text = "The Switch is On"
-        } else {
-            textLabel.text = "The Switch is Off"
+    public func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+        print("\nName   : \(peripheral.name ?? "(No name)")")
+        print("RSSI   : \(RSSI)")
+        for ad in advertisementData {
+            print("AD Data: \(ad)")
         }
-    }*/
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
-
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

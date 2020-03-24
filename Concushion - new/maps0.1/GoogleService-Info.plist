@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>577058656263-6duhbg6jrol387n9r3ilngibv6m2mjrs.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.577058656263-6duhbg6jrol387n9r3ilngibv6m2mjrs</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBGqXtVU-p58zjuS7bDvAG-MAg8NKDFEv8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>577058656263</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.cjfoglio.concushion</string>
+	<key>PROJECT_ID</key>
+	<string>concushion-6dbd7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>concushion-6dbd7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:577058656263:ios:568d75039513c30d845aa2</string>
+	<key>DATABASE_URL</key>
+	<string>https://concushion-6dbd7.firebaseio.com</string>
+</dict>
+</plist>

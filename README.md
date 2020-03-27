@@ -17,7 +17,7 @@ ngrok http 5000
 
 3. Copy ngrok https url 
 
-![Ngrok Screenshot](ngrok_Screenshot.png)
+![Ngrok Screenshot](Pics/ngrok_Screenshot.png)
 
 4. Past url into 'url' variable in CollisionTimer.swift > func sendMsg() > url
 

@@ -1,6 +1,7 @@
+#
 # Concushion Smart Helmet
 <br></br>
-## How to run the app
+## How to run the iOS app
  
 ### For the text message functionality you must:
 1. Start up flash server script
@@ -28,6 +29,6 @@ func sendMsg(number: String, address: String){
     let url = "https://350c99be.ngrok.io"
 ```
 
-4. Build and run the app
+5. Build and run the app
  
 Note - the python script isn't in the repo, I have to send it to you separately.

@@ -1,5 +1,5 @@
 # Concushion Smart Helmet
-
+<br></br>
 ## How to run the app
  
 ### For the text message functionality you must:
@@ -15,11 +15,11 @@ python3 sms.py
 ngrok http 5000
 ```
 
-3. Copy ngrok https url 
+3. Copy the ngrok https URL 
 
 ![Ngrok Screenshot](Pics/ngrok_Screenshot.png)
 
-4. Past url into 'url' variable in CollisionTimer.swift > func sendMsg() > url
+4. Paste URL into 'url' variable in CollisionTimer.swift > func sendMsg() > url
 
  ```Swift
 func sendMsg(number: String, address: String){

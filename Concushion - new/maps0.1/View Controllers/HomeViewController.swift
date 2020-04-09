@@ -8,10 +8,13 @@
 
 import UIKit
 import CoreBluetooth
+import Alamofire
 
 class HomeViewController: UIViewController, CBCentralManagerDelegate {
     
     private var centralManager : CBCentralManager!
+    
+    var ip = "http://13.59.245.151:3031/"
     
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         if central.state == .poweredOn {
@@ -27,8 +30,12 @@ class HomeViewController: UIViewController, CBCentralManagerDelegate {
         if stateSwitch.isOn {
             textLabel.text = "End Trip"
             addressLabel.text = address
+            
+            sendStartTripMsg()
         } else {
             textLabel.text = "Start Trip"
+             
+            sendEndTripMsg()
         }
         
     }
@@ -63,5 +70,23 @@ class HomeViewController: UIViewController, CBCentralManagerDelegate {
      // Pass the selected object to the new view controller.
      }
      */
+    
+    
+       func sendStartTripMsg(){
+            let url = ip + "startTrip"
+
+            AF.request(url, method: .get).response { response in
+                    print(response)
+            }
+        }
+    
+        func sendEndTripMsg(){
+           let url = ip + "endTrip"
+
+           AF.request(url, method: .get).response { response in
+                   print(response)
+           }
+      
+        }
     
 }

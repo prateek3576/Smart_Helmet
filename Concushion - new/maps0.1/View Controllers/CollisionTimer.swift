@@ -57,6 +57,18 @@ class CollisionTimer: UIViewController, MFMessageComposeViewControllerDelegate {
            
         }
         
+        let piParameters: [String: Any] = [
+            "name" : "Caleb",
+            "location" : address,
+            "date" : "4/13/20",
+            "contact": number
+        ]
+
+        AF.request("http://13.59.245.151:3031/crash", method: .post, parameters: piParameters, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                print(response)
+            }
+        
 //        self.present(messageVC, animated: true) {
             self.makeCall(number: number)
 //        }

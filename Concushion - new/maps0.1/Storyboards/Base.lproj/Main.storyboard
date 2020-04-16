@@ -256,11 +256,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rT4-Jq-sYd">
-                                <rect key="frame" x="281" y="81" width="45" height="30"/>
+                                <rect key="frame" x="266" y="81" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Crash!"/>
                                 <connections>
-                                    <segue destination="dK4-SO-MrE" kind="popoverPresentation" popoverAnchorView="rT4-Jq-sYd" id="plL-aS-fhS">
+                                    <segue destination="dK4-SO-MrE" kind="popoverPresentation" identifier="crashSegue" popoverAnchorView="ExQ-Gt-kSP" id="ykd-qZ-ybD">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
                                 </connections>

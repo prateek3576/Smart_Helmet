@@ -10,6 +10,7 @@ import UIKit
 import CoreBluetooth
 import Alamofire
 
+
 class HomeViewController: UIViewController, CBCentralManagerDelegate {
     
     private var centralManager : CBCentralManager!
@@ -71,22 +72,69 @@ class HomeViewController: UIViewController, CBCentralManagerDelegate {
      }
      */
     
+    func resetCrash() {
+        let url = ip + "resetcrash"
+        print("resetting crash")
+         AF.request(url, method: .get).response { response in
+                 print(response)
+         }
+    }
     
+   
        func sendStartTripMsg(){
             let url = ip + "startTrip"
-
+            print("sending Start Trip request")
+            AF.request(url, method: .get).response { response in
+                    print(response)
+            }
+        
+            
+               
+            Timer.scheduledTimer(withTimeInterval: 4, repeats: true) { timer in
+//                let randomNumber = Int.random(in: 1...20)
+//                print("Number: \(randomNumber)")
+               
+           
+                AF.request(self.ip+"pollforcrash", method: .get).response { responseObject in
+                    print(responseObject)
+                     if let statusCode = responseObject.response?.statusCode {
+                           if statusCode == 200 {
+                               // crash
+                                print("crash")
+                                timer.invalidate()
+                            self.performSegue(withIdentifier: "crashSegue", sender: nil)
+                            
+                            self.resetCrash()
+                            
+                           } else {
+                                print("no crash")
+                            }
+                        }
+                }
+                
+//                if randomNumber == 10 {
+//                    timer.invalidate()
+//                }
+            }
+    }
+    
+    
+        func sendEndTripMsg(){
+           let url = ip + "endTrip"
+            print("Initating End Trip Request")
+           AF.request(url, method: .get).response { response in
+                   print(response)
+           }
+        }
+    
+        func sendCrashPoll(){
+            let url = ip + "pollforcrash"
+            print("polling for crash request")
             AF.request(url, method: .get).response { response in
                     print(response)
             }
         }
     
-        func sendEndTripMsg(){
-           let url = ip + "endTrip"
 
-           AF.request(url, method: .get).response { response in
-                   print(response)
-           }
-      
-        }
     
 }

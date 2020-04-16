@@ -26,7 +26,7 @@ class VideoViewController: UIViewController, WKUIDelegate {
         super.viewDidLoad()
         
         webView.uiDelegate = self
-        let myURL = URL(string:"https://www.apple.com")
+        let myURL = URL(string:"http://13.59.245.151:3030")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
         webView.allowsBackForwardNavigationGestures = true
